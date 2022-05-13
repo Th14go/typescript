@@ -11,9 +11,9 @@ const precosReais = precos.map(preco =>
      'R$' + preco + ',00');
 
 const acimaVinte = precos.filter
-(preco => preco > 20).map(preco => 'R$' + preco + ',00');
+(preco => preco >= 20).map(preco => 'R$' + preco + ',00');
 const menorVinte = precos.filter
-(preco => preco < 20).map(preco => 'R$' + preco + ',00');
+(preco => preco <= 20).map(preco => 'R$' + preco + ',00');
 
 console.log(`Preços acima de R$20,00: `, acimaVinte);
 console.log(`Preços abaixo de R$20,00: `, menorVinte);
